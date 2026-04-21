@@ -59,9 +59,9 @@ async function predict() {
     if (highestClass === "Still and Calm") {
         feedback.innerHTML = "🟢 You are calm.";
     } else if (highestClass === "Mildly distressed") {
-        feedback.innerHTML = "🟡 Try a small break or stretch.";
+        feedback.innerHTML = "🟡 You are Mildly distressed, Try a small break or stretch.";
     } else if (highestClass === "Distressed and overwhelmed") {
-        feedback.innerHTML = "🔴 Try a calming technique.";
+        feedback.innerHTML = "🔴 You are Distressed and overwhelmed. Calm down and take deep breaths.";
     }
 
     drawPose(pose);

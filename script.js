@@ -74,3 +74,7 @@ function drawPose(pose) {
         if (pose) {
             const minPartConfidence = 0.5;
             tmPose.drawKeypoints(pose.keypoints, minPartConfidence, ctx);
+            tmPose.drawSkeleton(pose.keypoints, minPartConfidence, ctx);
+        }
+    }
+}

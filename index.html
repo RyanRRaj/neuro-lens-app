@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NeuroLens Gesture Recognition</title>
+
+    <!-- Link to your CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TensorFlow + Teachable Machine Pose Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+</head>
+
+<body>
+
+    <h1>NeuroLens Gesture Recognition</h1>
+
+    <button onclick="init()">Start Camera + Model</button>
+
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div id="label-container"></div>
+        <div id="feedback"></div>
+    </div>
+
+    <!-- Link to your JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
